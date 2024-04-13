@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 
 suite('View Cookbook page', function() {
   test('Page title', async function() {
-    let res = await fetch("http://localhost:8080/cookbook");
+    let res = await fetch("http://localhost:8888/cookbook");
     let body = await res.text();
     assert.ok(body.includes("<h1>Cookbook</h1>"));
   });
